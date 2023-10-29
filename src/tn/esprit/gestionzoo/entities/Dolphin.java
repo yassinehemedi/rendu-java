@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
 
-public class Dolphin extends AquaticAnimal {
+public abstract class Dolphin extends AquaticAnimal {
     private float swimmingSpeed;
 
     public Dolphin(String family, String name, int age, boolean isMammal, String habitat, float swimmingSpeed) {
@@ -9,8 +9,6 @@ public class Dolphin extends AquaticAnimal {
     }
 
 
-    public void swim() {
-        System.out.println("This dolphin is swimming.");
-    }
+     public abstract  void swim() ;
 
 }

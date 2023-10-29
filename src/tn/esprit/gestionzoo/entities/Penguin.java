@@ -6,6 +6,8 @@ public class Penguin extends AquaticAnimal {
         super(family, name, age, isMammal, habitat);
         this.swimmingDepth = swimmingDepth;
     }
+    float getSwimmingDepth()
+    {return swimmingDepth;}
 
     // Getters et setters spécifiques pour la profondeur de nage
 }

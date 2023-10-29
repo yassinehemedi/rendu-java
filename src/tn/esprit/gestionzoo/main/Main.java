@@ -17,7 +17,7 @@ public class Main {
         Animal dolphin = new Animal("Delphinidae", "Dolphin", 8, true);
 
         // Création d'un zoo (myZoo)
-        Zoo myZoo = new Zoo("Mon Zoo", "Ma Ville", 25);
+        Zoo myZoo = new Zoo("Mon Zoo", "Ma Ville", 25,10);
 
         // Affectation des animaux au zoo
 
@@ -39,8 +39,8 @@ public class Main {
         boolean suppressionReussie = myZoo.removeAnimal(lion);// retourne true
 
 
-        Zoo zoo1 = new Zoo("Mon Zoo1", "Ma Ville1", 25);
-        Zoo zoo2 = new Zoo("Mon Zoo2", "Ma Ville2", 25);
+        Zoo zoo1 = new Zoo("Mon Zoo1", "Ma Ville1", 25,10);
+        Zoo zoo2 = new Zoo("Mon Zoo2", "Ma Ville2", 25,10);
 
 // Ajoutez des animaux aux zoos...
 
@@ -51,8 +51,9 @@ public class Main {
         System.out.println(myZoo.isZooFull());
 
         AquaticAnimal aquaticAnimal = new AquaticAnimal("Aquatic Mammal", "Aquatic Animal", 10, true, "Ocean");
+        AquaticAnimal aquaticAnimal1 = new AquaticAnimal("Mammal", " Animal", 10, true, "Ocean");
+
         TerrestrialAnimal terrestrialAnimal = new TerrestrialAnimal("Terrestrial Animal", "Terrestrial Animal", 8, true, 4);
-        Dolphin dolphin1 = new Dolphin("Dolphin Family", "Dolphin", 15, true, "Ocean", 15);
         Penguin penguin = new Penguin("Penguin Family", "Penguin", 7, true, "Antarctica", 25);
 
         System.out.println( lion.toString() );
@@ -61,8 +62,15 @@ public class Main {
 
 
         aquaticAnimal.swim();//This aquatic animal is swimming
-        dolphin1.swim();// This dolphin is swimming.
         penguin.swim();//  This aquatic animal is swimming.
+
+
+        zoo1.addAquaticAnimal(aquaticAnimal);
+        zoo1.swim();
+
+        aquaticAnimal.equals(aquaticAnimal1);
+
+
 
 
 

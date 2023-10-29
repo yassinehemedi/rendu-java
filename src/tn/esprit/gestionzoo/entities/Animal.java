@@ -32,6 +32,10 @@ public class Animal {
     public int getage() {
         return age;
     }
+    public String getname() {
+        return name;
+    }
+
     public String toString() {
         return "Family: " + family + "\nName: " + name + "\nAge: " + age + " years" + "\nIs Mammal: " + isMammal;
     }
