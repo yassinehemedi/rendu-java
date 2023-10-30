@@ -20,10 +20,10 @@ public class AquaticAnimal extends Animal {
         System.out.println("This aquatic animal is swimming.");
     }
     public boolean equals(AquaticAnimal a)
-    { if((this.habitat==a.gethabitat())&&(super.getage()==a.getage())&&(super.getname()==a.getname()))
+    { if (this.habitat.equals(a.gethabitat()) && super.getage() == a.getage() && super.getname().equals(a.getname())) {
         return true;
-        else return false;
-
-
+    } else {
+        return false;
+    }
     }
 }
