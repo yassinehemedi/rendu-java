@@ -19,6 +19,9 @@ public class Zoo {
     public String getName() {
         return name;
     }
+    public int getNbrCages() {
+        return nbrCages;
+    }
     public void setName(String name) {
         if (name != null ) this.name = name;
         else {
@@ -26,12 +29,12 @@ public class Zoo {
         }
     }
     public boolean addAnimal(Animal animal) {
-        if(isZooFull())
-            for (int i = 0; i < this.nbrCages; i++)
+        if(!isZooFull())
+        {for (int i = 0; i < this.nbrCages; i++)
                 if (animals[i] == null) {
                     animals[i] = animal;
                     return true;
-                }
+                }}
         return false;
     }
 
@@ -76,9 +79,9 @@ public class Zoo {
         return false;
 
     }
-    public int nbranimal1(Zoo z){
+     public int nbranimal1(Zoo z){
         int nbranimal=0;
-        for(int i=0;(i<this.nbrCages);i++)
+        for(int i=0;(i<z.getNbrCages());i++)
         {if(animals[i]!=null)
         {nbranimal=+1;}}
         return nbranimal;
