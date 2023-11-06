@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
 
-public class AquaticAnimal extends Animal {
+public class AquaticAnimal extends Animal implements Herbivore<Food> {
     private String habitat;
 
     public String gethabitat() {
@@ -26,4 +26,10 @@ public class AquaticAnimal extends Animal {
         return false;
     }
     }
+    public void eatPlant(Food PLant)
+    {if(PLant.equals(Food.Plant))
+    {System.out.println("eats plants");}
+    else
+    {System.out.println("doesnt eat plants");} }
 }
+
