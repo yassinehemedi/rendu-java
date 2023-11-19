@@ -36,7 +36,7 @@ public class SocieteArrayList implements IGestion<Employe> {
     @Override
     public void displayEmploye(){
         for (Employe employe : L) {
-             employe.toString();}
+             System.out.println(employe.toString());}
     }
     @Override
     public void trierEmployeParId() {
